@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+</head>
+<body>
+    <script>
+        var randomNumber = Math.floor(Math.random() * 100)
+
+        var reuslt;
+        var userInput =  prompt('entre number of 0 et 100')
+        var itIsSmall = "C'est plus petit que " + userInput + ", essayez plus"
+        var itIsBigger = "C'est plus grand que " + userInput + ", essayez plus"
+            if (userInput == randomNumber){
+                 reuslt = winMessage;
+            } else if (userInput > randomNumber){
+                    reuslt = itIsSmall
+            } else if (userInput < randomNumber){
+                    reuslt = itIsBigger
+                }
+        alert(reuslt)
+    </script>
+</body>
+</html>
