@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>var userinput = prompt("nte number of 0 on 100");
+        var randomNumber = (Math.random(Math.round()) * 100);
+        var n = parseInt(userinput)
+        var attempts = 9 ;
+        var winmessage = "Félicitations"+ attempts + "tentatives";
+        var lostmessage = "loooser"  ;
+        var itIsSmall = "C'est plus petit que " + userinput + ", essayez plus";
+        var itIsBigger = "C'est plus grand que " + userinput + ", essayez plus";
+        function isCorrect() {
+        while (attempts > 0){
+         if(userinput == randomNumber) { 
+           alert(winmessage);
+         } else if (userinput>randomNumber){ userinput=prompt("C'est plus petit que " + userinput + ", essayez plus\n" + "tentatives: "+ attempts );
+         attempts--;
+         }else { userinput= prompt("C'est plus grand que " + userinput + ", essayez plus\n" + "tentatives: "+ attempts);
+         attempts--;
+         }
+        }
+         if(attempts == 0){
+            alert(lostMessage)
+        }
+         }
+         
+         isCorrect()</script>
+</body>
+</html>
