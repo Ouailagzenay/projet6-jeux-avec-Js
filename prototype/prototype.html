@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <script>var userinput = prompt("nte number of 0 on 100");
-        var randomNumber = (Math.random(Math.round()) * 100);
-        var n = parseInt(userinput)
+    <script>
+        var userinput = prompt("nte number of 0 on 100");
+        var randomNumber = Math.floor(Math.random () * 100);
+        var n = parseInt(userinput);
         var attempts = 9 ;
-        var winmessage = "Félicitations"+ attempts + "tentatives";
+        var winmessage = "Félicitations ";
         var lostmessage = "loooser"  ;
         var itIsSmall = "C'est plus petit que " + userinput + ", essayez plus";
         var itIsBigger = "C'est plus grand que " + userinput + ", essayez plus";
@@ -26,9 +27,9 @@
          }
         }
          if(attempts == 0){
-            alert(lostMessage)
+            alert(lostmessage)
         }
-         }
+        }
          
          isCorrect()</script>
 </body>
