@@ -1,0 +1,77 @@
+*{
+    padding:0 ;
+    margin: 0;
+}
+.bar{
+    width: 470PX;
+    background-color:#2E4C6D;
+    height: 450px;
+    padding-left: 150PX;
+    margin-left: 350PX;
+     border: #C2FFF9;;
+    border-style: solid ;
+    border-width: 10px;
+    border-radius: 10PX;
+    
+
+}
+.logo{
+    width: 70px;
+    margin-left: 110PX;
+    margin-bottom: 80PX;
+    padding-bottom: 15PX;
+    padding-left: 8PX;
+    padding-right: 8PX;
+    border-style: solid ;
+    border-width: 3px;
+    background-color: #FC997C;
+    border-radius: 5PX;
+
+}
+#p1{
+    width: 340PX;
+    margin-bottom: 45PX;
+    font-size: 23PX;
+    text-align: center;
+    border-style: solid ;
+    border-width: 3px;
+    background-color: #FC997C;
+    border-radius: 8PX;
+}
+#tentative{
+    margin-bottom: 20PX;
+    text-align: center;
+    font-size: 20PX;
+    border-style: solid ;
+    border-width: 3px;
+    background-color: #FC997C;
+    margin-left: 85PX;
+    width: 140PX;
+    border-radius: 8PX;
+}
+#outputText{
+    margin-bottom: 20PX;
+    margin-left: 65PX;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    border-style: solid ;
+    border-width: 3px;
+    background-color: #FC997C;
+    border-radius: 8PX;
+}
+#userInput{ 
+    padding-top: 10PX;
+    padding-bottom: 10px;
+    padding-right: 50PX;
+    padding-left: 50PX;
+    border-radius: 8PX;
+    margin-right: 15PX;
+}
+#botn{
+    padding-top: 10PX;
+    padding-bottom: 10px;
+    padding-right: 30PX;
+    padding-left: 20PX;
+    border-radius: 8PX;
+}
