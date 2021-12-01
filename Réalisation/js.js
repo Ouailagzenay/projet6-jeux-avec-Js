@@ -19,18 +19,18 @@ if (attmpes > 0) {
    outputattmpes.innerHTML= 'attmpes = '+attmpes 
   if(nombreDeviner == number){
     if(nombreDeviner == number && attmpes >=8){
-      output.innerHTML = 'TRES BEIN'
+      output.innerHTML = 'Bravo, vous etes un Génie !'
       }else{
       if(nombreDeviner == number && attmpes >=3){
-      output.innerHTML = 'bein'
+      output.innerHTML = 'Félicitations'
       }
      }
 
     }else{
     if(nombreDeviner > number){
-      output.innerHTML="c'est nomber est plus grand"
+      output.innerHTML="le nombre que vous avez choisir est plus grand"
     }else{
-      output.innerHTML="c'est nomber est plus petit"
+      output.innerHTML="le nombre que vous avez choisir est plus petit"
     }
   }
 }else {

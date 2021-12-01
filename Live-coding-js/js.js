@@ -16,11 +16,11 @@ var nombreDeviner ;
     nombreDeviner=document.getElementById("userInput").value;
    if ( nombreDeviner == number ){ 
      output.innerHTML = "Félicitations" 
-   }else if (nombreDeviner > number) {
-    output.innerHTML = "c'est nomber est plus petit que" 
-   }
-   else {
-     output.innerHTML = "c'est nomber est plus grand que"
+   }else 
+   if (nombreDeviner < number) {
+   output.innerHTML ="c'est number est plus petit "
+   }else {
+     output.innerHTML= "c'est number est plus grand"
    }
   
  };

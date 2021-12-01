@@ -4,11 +4,11 @@
 }
 .bar{
     width: 470PX;
-    background-color:#2E4C6D;
+    background-color:#396EB0;
     height: 450px;
     padding-left: 150PX;
     margin-left: 350PX;
-     border: #C2FFF9;;
+     border: #2E4C6D;
     border-style: solid ;
     border-width: 10px;
     border-radius: 10PX;
@@ -16,6 +16,7 @@
 
 }
 .logo{
+   
     width: 70px;
     margin-left: 110PX;
     margin-bottom: 80PX;
