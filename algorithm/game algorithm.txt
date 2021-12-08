@@ -1,0 +1,43 @@
+Fonction Principale
+    ... déclaration variable
+    Déclarer la Variable randomNumber  de Type Entier
+    Déclarer la Variable remainingAttempts  de Type Entier
+    Déclarer la Variable winMessage  de Type Chaîne
+    Déclarer la Variable lostMessage  de Type Chaîne
+    Déclarer la Variable attemptsMessage  de Type Chaîne
+    Déclarer la Variable gameOver  de Type Booléen
+    Déclarer la Variable message  de Type Chaîne
+    
+    ... entrer
+    Assigner à la Variable randomNumber l'Expression Random(100)
+    Afficher randomNumber
+    Déclarer la Variable userInput  de Type Entier
+    
+    Assigner à la Variable remainingAttempts l'Expression 10
+    Assigner à la Variable lostMessage l'Expression "C'est raté !!"
+    Assigner à la Variable gameOver l'Expression false
+    Tant Que remainingAttempts>0 && gameOver != true
+        Afficher "tentatives: " & remainingAttempts
+        Attendre la Saisie de userInput
+        Assigner à la Variable remainingAttempts l'Expression remainingAttempts- 1
+        Si userInput == randomNumber
+            Si remainingAttempts >= 8
+                Assigner à la Variable winMessage l'Expression "Bravo, vous etes un Génie !!!"
+            Faux:
+                Assigner à la Variable winMessage l'Expression "Félicitations, vous avez gagné apres " & (10 - remainingAttempts)
+            Fin
+            Assigner à la Variable gameOver l'Expression true
+            Assigner à la Variable message l'Expression winMessage
+        Faux:
+            Si userInput > randomNumber
+                Afficher "C'est plus petit que " & userInput &", essayez plus"
+            Faux:
+                Afficher "C'est plus grand  que " & userInput & ", essayez plus"
+            Fin
+        Fin
+    Fin
+    Si remainingAttempts == 0
+        Assigner à la Variable message l'Expression lostMessage
+    Fin
+    Afficher message
+Fin
